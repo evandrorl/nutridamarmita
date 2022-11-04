@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  --bg-color: #7DBE8C;
+  --text-color: #00082f;
+  --primary-color: #FF8C00;
+  --primary-color-dark: #FFA500;
+}
+
+body.dark {
+  --bg-color: #228B22;
+  --text-color: white;
+}
+
+body.pink {
+  --bg-color: #FFF0F6;
+  --text-color: #1f0000;
+  --primary-color: #D6336c;
+  --primary-color-dark: #A61E4D;
+}
+
+body.pink.dark {
+  --bg-color: #1F000B;
+  --text-color: #FFF0F6;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 60px auto;
+}
+
+img {
+  width: 100%;
+}
+
+.userName {
+  font-family: 'Roboto Mono', monospace;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.username:hover {
+  text-shadow: 0 0 6px var(--text-color);
+  transition: 300ms;
+}
+
+img.whatsapp {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+img.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 3.7px;
+  border: var(--primary-color) solid 4px;
+}
+
+img.avatar:hover {
+  border: var(--primary-color-dark) solid 7px;
+  transition: 488ms;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+h1:hover {
+  text-shadow: 0 0 6px var(--text-color);
+  font: bold;
+}
+
+ul {
+  list-style: none;
+  margin: 40px 0;
+}
+
+ul li a {
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  color: var(--text-color);
+
+  font-size: 14px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  transition: background 488ms;
+}
+
+ul li a:hover {
+  background: var(--primary-color-dark);
+}
+
+footer {
+  display: flex;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+  transition: opacity 488ms;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer a {
+  color: var(--text-color);
+}
