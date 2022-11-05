@@ -92,7 +92,7 @@ h1:hover {
 
 ul {
   list-style: none;
-  margin: 40px 0;
+  margin: 0px 0;
 }
 
 ul li a {
@@ -115,12 +115,14 @@ ul li a:hover {
 
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   font-weight: 500;
   font-size: 12px;
   opacity: 0.6;
   transition: opacity 488ms;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 footer:hover {
@@ -129,4 +131,40 @@ footer:hover {
 
 footer a {
   color: var(--text-color);
+}
+
+.btn-whatsapp {
+  outline: none;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+  background: #34af23;
+  color: #fff;
+  font-size: 2.3rem;
+  border: 1px solid #f1f1f1;
+
+
+  animation-name: pulsar;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes pulsar {
+  0% {
+    height: 45px;
+    width: 45px;
+  }
+
+  100% {
+    height: 55px;
+    width: 55px;
+  }
 }
